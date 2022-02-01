@@ -1,0 +1,72 @@
+* {
+    text-align: center;
+    background-color: #365160;
+    color: #FFF;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+}
+
+hr {
+    width: 70%;
+    margin-top: -75px;
+  
+}
+
+div.react-datepicker__day{
+    background-color: #FFF;
+    color: black;
+}
+
+div.react-datepicker__current-month{
+    background-color: #FFF;
+}
+
+div.react-datepicker__day-names{
+    background-color: #FFF;
+}
+
+div.react-datepicker__day-name{
+    background-color: #FFF;
+}
+
+div.react-datepicker__header {
+    background-color: #FFF;
+}
+
+div.react-datepicker-popper {
+    margin-left: 40%;
+    background-color: #FFF;
+}
+
+div.react-datepicker__month-container {
+    background-color: #FFF;
+}
+
+div.react-datepicker__week {
+    background-color: #FFF;
+}
+
+input {
+    background-color: #FFF;
+    color: black;
+}
+
+div.react-datepicker__day--selected {
+    color: black;
+    background-color: #EFE8AD;
+}
+
+
+
+
+/* colors
+blue #365160
+tan #EFE8AD
+green #AADD96
+orange #F28512
+yellow #F6BC3B
+*/
