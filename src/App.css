@@ -1,69 +1,100 @@
 * {
-    text-align: center;
-    background-color: #365160;
-    color: #FFF;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  background-color: #365160;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
-    width: 200px;
+  width: 200px;
+}
+
+h2 {
+  margin-top: 100px;
 }
 
 hr {
-    width: 70%;
-    margin-top: -75px;
-  
+  width: 70%;
+  margin-top: -75px;
 }
 
-div.react-datepicker__day{
-    background-color: #FFF;
-    color: black;
+div.react-datepicker__day {
+  background-color: #fff;
+  color: black;
 }
 
-div.react-datepicker__current-month{
-    background-color: #FFF;
+div.react-datepicker__current-month {
+  background-color: #fff;
 }
 
-div.react-datepicker__day-names{
-    background-color: #FFF;
+div.react-datepicker__day-names {
+  background-color: #fff;
 }
 
-div.react-datepicker__day-name{
-    background-color: #FFF;
+div.react-datepicker__day-name {
+  background-color: #fff;
 }
 
 div.react-datepicker__header {
-    background-color: #FFF;
+  background-color: #fff;
 }
 
 div.react-datepicker-popper {
-    margin-left: 40%;
-    background-color: #FFF;
+  margin-left: 40%;
+  background-color: #fff;
+  border-radius: 5px;
 }
 
 div.react-datepicker__month-container {
-    background-color: #FFF;
+  background-color: #fff;
 }
 
 div.react-datepicker__week {
-    background-color: #FFF;
+  background-color: #fff;
 }
 
 input {
-    background-color: #FFF;
-    color: black;
+  background-color: #fff;
+  color: black;
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
 }
 
 div.react-datepicker__day--selected {
-    color: black;
-    background-color: #EFE8AD;
+  color: black;
+  background-color: #efe8ad;
 }
 
+button {
+  margin-top: 10px;
+  background-color: #efe8ad;
+  color: black;
+  height: 30px;
+  width: 100px;
+  font-size: 15px;
+  border-radius: 5px;
+}
 
+div.react-datepicker__triangle::before {
+  border: none !important;
+}
 
+div.react-datepicker__triangle::after {
+  border: none !important;
+}
 
-/* colors
+.container {
+  border: 1px solid;
+  box-shadow: 0px 0px 5px 3px #EFE8AD;
+  margin-top: 20px;
+  margin-left: 500px;
+  margin-right: 500px;
+  border-radius: 5px;
+}
+
+/* COLOR PALETTE
 blue #365160
 tan #EFE8AD
 green #AADD96
