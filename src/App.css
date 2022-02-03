@@ -94,6 +94,14 @@ div.react-datepicker__triangle::after {
   border-radius: 5px;
 }
 
+@media only screen and (max-width: 1225px) {
+ .container {
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+ }
+}
+
 /* COLOR PALETTE
 blue #365160
 tan #EFE8AD

@@ -12,7 +12,7 @@ export default function App() {
   const getNeos = () => {
     axios
       .get(
-        `https://api.nasa.gov/neo/rest/v1/feed?api_key=2zcSAHeiiktxliyCHz2eVVzGfUpwPsFqTX97WquF` //string int
+        `https://api.nasa.gov/neo/rest/v1/feed?api_key=2zcSAHeiiktxliyCHz2eVVzGfUpwPsFqTX97WquF`
       )
       .then((response) => {
         console.log(response);
