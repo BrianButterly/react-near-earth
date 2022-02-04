@@ -92,7 +92,7 @@ div.react-datepicker__triangle::after {
   margin-left: 500px;
   margin-right: 500px;
   border-radius: 5px;
-  transition: ease 2s;
+  transition: ease 1s;
 
 }
 
