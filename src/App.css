@@ -92,6 +92,15 @@ div.react-datepicker__triangle::after {
   margin-left: 500px;
   margin-right: 500px;
   border-radius: 5px;
+  transition: ease 2s;
+
+}
+
+.container:hover{
+  box-shadow: 0px 0px 10px 6px #EFE8AD;
+  margin-left: 450px;
+  margin-right: 450px;
+  padding: 20px;
 }
 
 @media only screen and (max-width: 1225px) {
@@ -100,6 +109,11 @@ div.react-datepicker__triangle::after {
   margin-left: 100px;
   margin-right: 100px;
  }
+}
+
+p {
+  font-size: 40px;
+  margin-bottom: -2px;
 }
 
 /* COLOR PALETTE

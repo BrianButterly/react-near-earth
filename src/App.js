@@ -8,6 +8,10 @@ import logo from "./logo.png";
 export default function App() {
   const [selectedDate, setSelectedDate] = useState(null);
   const [neos, setNeos] = useState([]);
+  const [neosTwo, setNeosTwo] = useState([]);
+  const [neosThree, setNeosThree] = useState([]);
+  const [neosFour, setNeosFour] = useState([]);
+  const [neosFive, setNeosFive] = useState([]);
 
   const getNeos = () => {
     axios
@@ -17,8 +21,25 @@ export default function App() {
       .then((response) => {
         console.log(response);
         // debugger
-        const myNeos = response.data.near_earth_objects["2022-02-02"][0];
+        const myNeos = response.data.near_earth_objects["2022-02-04"][0].name;
+        const myNeos2 =
+          response.data.near_earth_objects["2022-02-04"][0].estimated_diameter
+            .feet.estimated_diameter_max;
+        const myNeos3 =
+          response.data.near_earth_objects["2022-02-04"][0]
+            .close_approach_data[0].miss_distance.miles;
+        const myNeos4 =
+          response.data.near_earth_objects["2022-02-04"][0]
+            .close_approach_data[0].relative_velocity.miles_per_hour;
+        const myNeos5 =
+          response.data.near_earth_objects[
+            "2022-02-06"
+          ][0].is_potentially_hazardous_asteroid.toString();
         setNeos(myNeos);
+        setNeosTwo(myNeos2);
+        setNeosThree(myNeos3);
+        setNeosFour(myNeos4);
+        setNeosFive(myNeos5);
       });
   };
 
@@ -49,13 +70,13 @@ export default function App() {
 
       <button onClick={handleDateFetch}>get data</button>
 
+      <p>Data for 02/04/2022</p>
       <div className="container">
-        <h3>Name: {neos.name} </h3>
-        <h3>Diameter: {} </h3>
-        <h3>Miss Distance: {} </h3>
-        <h3>Speed: {} </h3>
-        <h3>Potentially hazardous: {} </h3>
-        {/* <h3>Potentially hazardous: {neos.is_potentially_hazardous_asteroid.toString()} </h3> */}
+        <h3>Name: {neos} </h3>
+        <h3>Diameter: ({neosTwo}) Feet</h3>
+        <h3>Miss Distance: ({neosThree}) Miles</h3>
+        <h3>Speed: ({neosFour}) Mph</h3>
+        <h3>Potentially hazardous: {neosFive} </h3>
       </div>
     </div>
   );
